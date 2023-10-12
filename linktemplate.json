@@ -1,6 +1,38 @@
 { 
     "$schema": "https://schema.management.azure.com/schemas/2019-04-01/deploymentTemplate.json#",
     "contentVersion": "1.0.0.0",
+     "parameters":{
+        "loganalyticsworkspace": {
+            "type": "string",
+            "defaultValue": "loganalyticsworkspace",
+            "metadata": {
+                "description": "Enter Workspace name"
+            }
+        },
+		"loganalyticsworkspace-location": {
+            "type": "string",
+            "defaultValue": "loganalyticsworkspace",
+            "metadata": {
+                "description": "Enter Workspace location"
+            }
+				},
+		"loganalyticsworkspace-subscription": {
+            "type": "string",
+            "defaultValue": "loganalyticsworkspace",
+            "metadata": {
+                "description": "Enter Workspace subscription"
+            }
+				},
+		"loganalyticsworkspace-resourceGroup": {
+            "type": "string",
+            "defaultValue": "loganalyticsworkspace",
+            "metadata": {
+                "description": "Enter Workspace subscription"
+            }
+				}
+
+
+    },
     "resources" : [
         {
             "type": "Microsoft.Insights/dataCollectionRules", 
