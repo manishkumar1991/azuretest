@@ -6,7 +6,7 @@
             "type": "Microsoft.Insights/dataCollectionRules", 
             "name": "singleDestinationDCRtesting1", 
             "apiVersion": "2022-06-01", 
-            "location": "[parameters('loganalyticsworkspace-location')]", 
+            "location": "eastus", 
             "properties": { 
               "dataSources": { 
                 "syslog": [ 
