@@ -49,7 +49,7 @@
                   "streams": [ 
                     "Microsoft-Syslog" 
                   ], 
-                  "transformKql": "source | where message has 'error'", 
+                  "transformKql": "source", 
                   "destinations": [ 
                     "content-test-workspace" 
                   ] 
